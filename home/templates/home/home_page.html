@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags %}
+
+{% block body_class %}
+<div class="rich-text">
+    <p>
+        <b>Welcome</b> to our new site!
+    </p>
+</div>
+
+{% endblock %}
+
+{% block content %}
+    {{ page.body|richtext }}
+{% endblock %}
